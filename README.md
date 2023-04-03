@@ -14,7 +14,7 @@ Log into the container `docker exec -it weather-app_php_1 bash`
 Then run:
 ```bash
 composer install
-php artisan migrate
+php artisan migrate # if asks to create database, type "yes"
 ```
 
 ## Application
