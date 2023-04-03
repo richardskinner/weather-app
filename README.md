@@ -56,6 +56,8 @@ been stored in the database the response will return as an empty array.
 
 While I am happy with the test, I do believe the testing coverage isn't good enough and some decisions around 
 architecture may have been overkill for what needed to be achieved in this test e.g. Serialiser, Value Objects.
+Using the serialiser allowed me to use the response code in teh commands but by doing so, I feel I may have violated 
+SOLID, also moving data retrieval here may have made the code slightly less readable and reusable.
 
 I have tried to use Interfaces where I thought implementations maybe replaced in teh future for example: If we wanted
 to use another source for the weather.
