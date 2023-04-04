@@ -11,6 +11,10 @@ To set up the project, run `docker-compose up -d --build --force-recreate` from 
 
 Log into the container `docker exec -it weather-app_php_1 bash`
 
+Create your env file `cp .env-example .env`
+
+MAke sure you set `OPEN_WEATHER_MAPS_API_KEY` with your OpenWeatherMaps key.
+
 Then run:
 ```bash
 composer install
